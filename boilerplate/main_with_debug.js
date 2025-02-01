@@ -38,7 +38,7 @@ function addColumns(cityPop){
     });
 };
 
-//
+// Function to add an event. This allows the mouseover event with click event inside.
 function addEvents(){
     document.querySelector("table").addEventListener("mouseover", function(){
         var color = "rgb(";
