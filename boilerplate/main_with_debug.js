@@ -1,3 +1,5 @@
+
+// Create cityPop array for each city and its population.
 var cityPop = [
     { 
         city: 'Madison',
@@ -17,6 +19,7 @@ var cityPop = [
     }
 ];
 
+// Create a function to add citySize column to table grouping the cities by population
 function addColumns(cityPop){
     document.querySelectorAll("tr").forEach(function(row, i){
         if (i == 0){
@@ -35,6 +38,7 @@ function addColumns(cityPop){
     });
 };
 
+//
 function addEvents(){
     document.querySelector("table").addEventListener("mouseover", function(){
         var color = "rgb(";
