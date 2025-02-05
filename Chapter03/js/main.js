@@ -88,11 +88,12 @@ function debugCallback(response){
       document.querySelector("#mydiv").insertAdjacentHTML('beforeend', 'GeoJSON data: ' + JSON.stringify(data));
   });
 }
-// fetch request to get json data
+// function and variable for holding json data
 function debugAjax(){
   var myData;
-
-  fetch("data/MegaCities1.csv")
+  
+// fetch request to get json data
+  fetch("data/MegaCities2.json")
       .then(function(response){
           return response.json();
       })
