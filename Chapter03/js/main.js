@@ -91,9 +91,9 @@ function debugCallback(response){
 // function and variable for holding json data
 function debugAjax(){
   var myData;
-  
+
 // fetch request to get json data
-  fetch("data/MegaCities2.json")
+  fetch("data/MegaCities.geojson")
       .then(function(response){
           return response.json();
       })
